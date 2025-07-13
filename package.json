@@ -2,13 +2,22 @@
   "name": "playwrite",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
-  "scripts": {},
+  "main": "login.spec.ts",
+  "scripts": {
+    "test:login:headed": "npx playwright test tests/EMR_ER/Test_scripts/login.spec.ts --headed"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@playwright/test": "^1.46.0",
-    "@types/node": "^22.1.0"
+    "@playwright/test": "^1.46.1",
+    "@types/node": "^22.5.1",
+    "chokidar-cli": "^3.0.0",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.8.3"
+  },
+  "dependencies": {
+    "dotenv": "^17.2.0"
   }
 }

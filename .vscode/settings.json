@@ -1,0 +1,13 @@
+{
+    "emeraldwalk.runonsave": {
+  "commands": [
+    {
+      "match": "\\.ts$",
+      "cmd": "npx playwright test --headed",
+      "isShellCommand": true,
+      "runIn": "terminal"
+    }
+  ]
+}
+
+}
