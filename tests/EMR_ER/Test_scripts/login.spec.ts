@@ -9,7 +9,7 @@ test.describe("Login Test with POM", () => {
 
     // Use env variables
     const username = process.env.ER_USERNAME!;
-    const password = process.env.ER_PASSWORD!;
+    const password = process.env.ER_PASSWORD!; 
     const patientName = process.env.PATIENT_NAME!;
 
     await loginPage.goto();
