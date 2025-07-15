@@ -33,7 +33,9 @@ export class LoginPage {
   }
 
   async goto() {
-    await this.page.goto("https://dever.shifa.com.pk/er");
+    // await this.page.goto("https://dever.shifa.com.pk/er");
+        await this.page.goto("https://www.bamboohr.com/");
+
   }
 
   async login(username: string, password: string) {
