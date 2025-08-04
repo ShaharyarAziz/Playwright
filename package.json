@@ -4,7 +4,9 @@
   "description": "",
   "main": "login.spec.ts",
   "scripts": {
-    "test:login:headed": "npx playwright test tests/EMR_ER/Test_scripts/login.spec.ts --headed"
+    "scripts": {
+      "test:login:headed": "npx playwright test tests/EMR_ER/Test_scripts/Vitals.spec.ts --project=chromium --headed"
+    }
   },
   "keywords": [],
   "author": "",
