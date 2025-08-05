@@ -16,7 +16,7 @@ export class Patient_SelectionPage {
       .getByRole("button");
     this.mrNumberInput = page.locator("div.ant-table-filter-dropdown input");
     this.searchButton = page.locator('span:has-text("Search")');
-    this.patientLink = page.getByRole("link", { name: "Mrs BIBI ZUHRA" });
+    this.patientLink = page.getByRole("link", { name: "Mr AMMAD ANWAR" });
   }
 
   async goto() {
