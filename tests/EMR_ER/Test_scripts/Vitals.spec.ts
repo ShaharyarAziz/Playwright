@@ -5,8 +5,8 @@ import { VitalsPage } from "../Pages/VitalsPage";
 import * as dotenv from "dotenv";
 dotenv.config();
 
-test.describe("Login Test with POM", () => {
-    test("User can log in, click Unit, and select patient", async ({ page }) => {
+test.describe("Vitals Page", () => {
+    test("Saving Vitals with Random Values", async ({ page }) => {
         const Patient = new Patient_SelectionPage(page)
         const vitals = new VitalsPage(page);
         // const mrNumber = process.env.ER_PATIENT_MR_NUMBER;

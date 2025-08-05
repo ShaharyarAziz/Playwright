@@ -8,8 +8,6 @@ export class Allergies_Page {
     private searchButton: Locator;
     private patientLink: Locator;
     private Allergies_Page: Locator;
-    private allergies_selection: Locator;
-    private allergy_description: Locator;
     private severity_level: Locator;
 
     constructor(private page: Page) {
@@ -44,14 +42,19 @@ export class Allergies_Page {
         this.Allergies_Page = this.page.getByRole("link", { name: "Allergies" });
         await this.Allergies_Page.click();
     }
-    async selectAllergy() {
+    async BrandAllergy() {
         await this.page.locator('input[value="Brand"]').click()
     }
-    async enterAllergyDescription() {
+    async GenericAllergy() {
+        await this.page.locator('input[value="Generic"]').click()
+    }
+    async BrandAllergyDescription() {
         this.page.getByRole('combobox', { name: 'Allergy Description*' }).click();
         await this.page.locator('div.ant-select-item-option-active div').click();
-
-
+    }
+    async GenericAllergyDescription() {
+          this.page.getByRole('combobox', { name: 'Allergy Description*' }).click();
+        await this.page.locator('div[title="BUDESONIDE+FORMETEROL-FUMARATE"] div').click();
     }
     async selectSeverityLevel(severity: string) {
         this.severity_level = this.page.getByRole('combobox', { name: 'Severity Level*' })
