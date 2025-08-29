@@ -24,6 +24,9 @@ test.describe("Login Test with POM", () => {
     await page.waitForTimeout(5000); // optional: replace with waitForSelector if needed
     await Patient.searchPatientByMRNumber(patientName);
     await Patient.selectPatient();
-    await page.pause(); // for debugging
+    // await page.pause(); // for debugging
+    await page.waitForTimeout(5000);
+
+    
   });
 });
