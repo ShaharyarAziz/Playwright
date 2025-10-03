@@ -84,10 +84,10 @@ export class VitalsPage {
         await this.pain_sacle_submit_btn.click({ force: true });
     }
     async selectConsciousLevel(level: string) {
-        await this.Conscious_Level.click();
+        await this.Conscious_Level.click(); 
         await this.Conscious_Level_dropdown.filter({ hasText: "A" }).click();
     }
-    async selectSupplyOxygen() {
+    async selectSupplyOxygen() {   
         await this.Supply_Oxygen.click({ force: true });
     }
     async saveVitals() {
