@@ -7,8 +7,8 @@ export class Allergies_Page {
     private mrNumberInput: Locator;
     private searchButton: Locator;
     private patientLink: Locator;
-    private Allergies_Page: Locator;
-    private severity_level: Locator;
+    private Allergies_Page: Locator | undefined;
+    private severity_level: Locator | undefined;
 
     constructor(private page: Page) {
 

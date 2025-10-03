@@ -3,7 +3,6 @@ import { Page, Locator,expect } from "@playwright/test";
 export class VitalsPage {
     private Temperature: Locator;
     private Pulse: Locator;
-    private RespiratoryRate: Locator;
     private BPS: Locator;
     private BPD: Locator;
     private RR: Locator;
@@ -16,7 +15,6 @@ export class VitalsPage {
     private Facial_expressions: Locator;
     private Body_Movements: Locator;
     private Compliance_with_the_ventilator: Locator;
-    private Vocalization: Locator;
     private Muscle_tension: Locator;
     private pain_sacle_submit_btn: Locator;
     private Conscious_Level: Locator;

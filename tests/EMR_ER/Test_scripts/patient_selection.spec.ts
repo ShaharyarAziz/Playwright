@@ -20,13 +20,15 @@ test.describe("Login Test with POM", () => {
 
     await Patient.goto();
     await loginToShifa(page);
-    await Patient.clickUnit();
+    // await Patient.clickUnit();
     await page.waitForTimeout(5000); // optional: replace with waitForSelector if needed
     await Patient.searchPatientByMRNumber(patientName);
     await Patient.selectPatient();
     // await page.pause(); // for debugging
-    await page.waitForTimeout(5000);
+    // await page.waitForTimeout(5000);
 
-    
+
+
   });
+
 });
